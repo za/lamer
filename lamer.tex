@@ -1,0 +1,84 @@
+\documentclass[xcolor=pdftex,table,10pt]{beamer}
+
+\usetheme{default}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{listings}
+
+\useoutertheme{infolines}
+\useinnertheme{rectangles}
+
+\graphicspath{{/home/x/x/}}
+
+\begin{document}
+
+\title{title}
+\subtitle{subtitle}
+\author{Zaki Akhmad}
+\institute{{\href{url}{name}}}
+\date{date}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{frametitle}
+		\begin{description}
+			\item[description] something 
+			\item[description] something 
+		\end{description}
+	\begin{flushleft}
+		\includegraphics[height=3cm]{something.jpeg}
+	\end{flushleft}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		for centered text	
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics<1>[height=5cm]{picture1.jpg}
+		\includegraphics<2>[height=5cm]{picture2.jpg}
+		\includegraphics<3>[height=5cm]{picture3.jpg}
+	\end{center}		
+\end{frame}
+
+% for non-numbered section
+\section*{Table of Contents}
+
+% with picture on the right side
+\begin{frame}
+	\frametitle{Table of Contents}
+	\begin{columns}
+	\column{0.4\textwidth}
+		\tableofcontents
+	\column{0.6\textwidth}
+		\begin{center}
+			\includegraphics[height=5cm]{table-of-contents.jpeg}
+		\end{center}
+	\end{columns}
+\end{frame}
+
+\section{introduction}
+\begin{frame}
+	\frametitle{introduction}
+	\underline{for underline words}
+	\begin{enumerate}
+		\item enumerate1
+		\item enumerate2
+		\item enumerate3
+		\begin{enumerate}
+			\item sub-enumerate1
+			\item sub-enumerate2
+		\end{enumerate}
+	\end{enumerate}
+\end{frame}
+
+\subsection{other section}
+
+\end{document}
